@@ -1,0 +1,152 @@
+@font-face {
+	font-family: guestFont;
+	src: url('Caveat-Bold.ttf');
+}
+
+.pagination li a {
+	color: white;
+}
+
+body {
+	font-family: guestFont;
+	font-size: 20px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.message {
+	background-color: #383842;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+
+.clr {
+	clear: both;
+}
+
+.txtIntro {
+	text-align: justify;
+	width: 70%;
+	margin: auto;
+}
+
+.intro {
+	text-align: center;
+	margin-top: 60px;
+	color: black;
+}
+
+.intro span {
+	border-top: 1px #f2f2f2 solid;
+}
+
+.btn-post {
+	background-color: #c61f3d;
+	width: 175px;
+	margin: auto;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+
+.pagination, .adminLink {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+.adminLink {
+	margin-left: 8%;
+}
+
+.current {
+	border-radius: 50%;
+	background-color: #c61f3d !important;
+}
+
+.pagination > li > a, .pagination > li > span {
+	background-color: transparent;
+	border: none;
+	float: none;
+	padding: 6px 14px;
+}
+
+.action span {
+	width: 30px;
+	height: 30px;
+	background: #c61f3d;
+	display: inline-block;
+	border-radius: 50%;
+	padding-top: 1px;
+	padding-left: 7px;
+}
+
+.action {
+	float: right;
+}
+
+.action span a {
+	color: white;
+}
+
+.content {
+	text-align: justify;
+	width: 75%;
+	margin: auto;
+}
+
+.author {
+	float: left;
+	text-align: justify;
+}
+
+.time-post {
+	font-size: 14px;
+}
+
+.author-name {
+	font-weight: bold;
+}
+
+.col {
+	padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.col {
+		padding: 1px;
+	}
+
+	.pagination, .adminLink {
+		position: relative;
+	}
+
+	.wrapper {
+		grid-template-rows: 22% 78%;
+		display: grid;
+		grid-template-columns: auto;
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	.edit-post, .login {
+		position: relative;
+		margin-top: 27%;
+	}
+}
+
+.error {
+	color: red;
+}
+
+.edit-post, .login {
+	padding: 30px;
+}
